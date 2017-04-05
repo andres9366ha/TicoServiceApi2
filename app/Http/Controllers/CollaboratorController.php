@@ -43,7 +43,7 @@ class CollaboratorController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Collaborator $collaborator
+     * @param  \App\Service  $service
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -59,7 +59,7 @@ class CollaboratorController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Collaborator $collaborator
+     * @param  \App\Service  $service
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -79,7 +79,7 @@ class CollaboratorController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Collaborator $collaborator
+     * @param  \App\Service  $service
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

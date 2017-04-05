@@ -11,25 +11,22 @@
 |
 */
 
-Route::get('login', function(){
-    return view('PaginasWeb.login');
-});
-
-
 Route::get('/', function () {
-    return view('PaginasWeb.busqueda', ['name' => session('name')]);
+    return view('PaginasWeb.busqueda');
 });
+
+Route::get('/user/activation/{token}',
+'UserController@userActivation');
+
 
 Route::get('registro', function(){
       return view('PaginasWeb.registro');
 });
 
-
+Route::get('login', function(){
+      return view('PaginasWeb.login');
+});
 
 Route::get('busqueda', function(){
       return view('PaginasWeb.busqueda');
-});
-
-Route::get('servicios', function(){
-      return view('PaginasWeb.servicios');
 });
